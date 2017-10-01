@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 try:
     from setuptools import setup
 except ImportError:
@@ -10,13 +9,13 @@ except ImportError:
             version     = __version__,
             packages    = ['crfsharp'],
             author      = __author__,
-            description = 'A Python wrapper around CRFSharp binary'
+            description = 'A Python wrapper around CRFSharp binary',
             zip_safe    = False, 
             install_requires = ['setuptools'],
             include_package_data = True,
             classifiers = (
-                │   'Development Status :: 1 - Planning',
-                │   'Intended Audience :: Developers'
+                'Development Status :: 1 - Planning',
+                'Intended Audience :: Developers'
                 ),
-            data_files=('bin/*.exe')
+            data_files = ('bin/*.exe')
             )
